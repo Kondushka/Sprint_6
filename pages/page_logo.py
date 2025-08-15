@@ -1,7 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from locators.locators_button import LocatorsButton
 from pages.base_page import BaseDoWithElements
-
+from src.urls import Urls
 
 class PageLogo(BaseDoWithElements):
 
@@ -15,6 +15,6 @@ class PageLogo(BaseDoWithElements):
         self.wait().until(EC.number_of_windows_to_be(2))
         handles = self.driver.window_handles
         self.driver.switch_to.window(handles[1])
-        self.wait().until(lambda d: d.current_url != "about:blank")
+        return self.wait().until(EC.url_contains(Urls.DZEN_URL))
 
 
