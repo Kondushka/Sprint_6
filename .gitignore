@@ -1,0 +1,58 @@
+# .gitignore for Sprint\_6
+
+# Byte-compiled / optimized / DLL files
+
+**pycache**/
+\*.py\[cod]
+\*.pyo
+
+# Distribution / packaging
+
+build/
+dist/
+\*.egg-info/
+pip-wheel-metadata/
+
+# OS
+
+.DS\_Store
+Thumbs.db
+
+# Pytest
+
+.cache/
+.pytest\_cache/
+
+# Coverage
+
+.coverage
+htmlcov/
+
+# Allure results & reports (ignore hyphenated, keep underscore variant tracked)
+
+allure-results/
+allure-report/
+.allure-results/
+!allure\_results/
+
+# IDEs and editors
+
+.vscode/
+.idea/
+\*.swp
+
+# Virtual environments
+
+venv/
+env/
+.venv/
+
+# Type checkers / linters / tox
+
+.mypy\_cache/
+.ruff\_cache/
+.tox/
+
+# Logs
+
+\*.log
